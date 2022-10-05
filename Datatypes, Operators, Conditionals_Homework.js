@@ -29,13 +29,12 @@ ASSIGNMENT RULES
 */
 
 /* WRITE YOUR ANSWER HERE */
-// a variable is a concept used in in programming languages to represent a container that is used  to save different values at different steps;
+// a variable is a concept used in programming languages to represent a container that is used to save different values at different steps;
 // Javascript is a loosely-typed languages, meaning that the same variable can hold different data types in different steps [although NOT recommended]
 
 /* EXERCISE 3
  Write the code to execute an addition (a sum) of the numbers 12 and 20.
 */
-
 /* WRITE YOUR ANSWER HERE */
 let sum = 12 + 20;
 console.log("the sum is: ", sum);
@@ -43,21 +42,18 @@ console.log("the sum is: ", sum);
 /* EXERCISE 4
  Create a variable named x and assign to it the number 12.
 */
-
 /* WRITE YOUR ANSWER HERE */
 let x = 12;
 
 /* EXERCISE 5
  Create a variable called name and assign to it the string "John Doe".
 */
-
 /* WRITE YOUR ANSWER HERE */
 let name = "John Doe";
 
 /* EXERCISE 6
  Execute a subtraction between the number 12 and the variable x you declared before (which is storing the value 12).
 */
-
 /* WRITE YOUR ANSWER HERE */
 let subtraction = 12 - x;
 console.log({ subtraction });
@@ -67,18 +63,25 @@ console.log({ subtraction });
  Verify that name1 is different from name2 (HINT: check their equality to be false).
  Finally, verify that the equality between name1 and name2 becomes true if both are lowercase (without changing the value of name2).
 */
-
 /* WRITE YOUR ANSWER HERE */
 let name1 = "john";
 let name2 = "John";
 let different = name1 === name2;
+let differentLowerCase = name1.toLowerCase() === name2.toLowerCase();
 console.log({ different });
+let verifyNames = different
+  ? "the names are the same"
+  : "the names are NOT the same";
+console.log({ verifyNames });
+let verifyLowerCaseNames = differentLowerCase
+  ? "the lower case names are the same"
+  : "the lower case names are NOT the same";
+console.log({ verifyLowerCaseNames });
 
 /* EXERCISE 8
  Create a variable named x, and assign to it a numeric value less than 10.
  Write the code to print the literal value of x (ex.: if x is 1, it should print "one", if x is 5 it should print "five" etc.).
 */
-
 /* WRITE YOUR ANSWER HERE */
 x = 7;
 if (x > 6 && x < 8) {
@@ -89,7 +92,6 @@ if (x > 6 && x < 8) {
  [Extra] Assign a value to a variable using a ternary operator (this topic has not been covered during lesson yet,
  try to search it by yourself, tomorrow morning we'll discuss it together!)
 */
-
 /* WRITE YOUR ANSWER HERE */
 let age = 13;
 let isAdult = age < 18 ? "minor" : "adult";
