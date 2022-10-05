@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.click {
+  position: relative;
+}
+
+body .show {
+  position: absolute;
+  right: 30%;
+  transform: translateX(200%);
+  translate: transform 350ms ease-out;
+  background: rebeccapurple;
+  padding: 1rem;
+}
+
+.click-btn1:hover {
+  transform: scale(1.1);
+}
+
+.click-btn1:hover .show {
+  transform: translateX(500%);
+}
